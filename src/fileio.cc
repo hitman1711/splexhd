@@ -110,6 +110,7 @@ int mapFile(string name, const char *&data, int &len)
 
 void unmapFile(int i)
 {
+    if (i == 0) return;
 	if (openfiledata[i-1]==NULL) return;
 	free(openfiledata[i-1]);
 	openfiledata[i-1]=NULL;
