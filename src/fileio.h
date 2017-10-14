@@ -3,6 +3,8 @@
 
 
 #include "includes.h"
+#include <sys/types.h>
+#include <unistd.h>
 
 /**
  * List directory contents
