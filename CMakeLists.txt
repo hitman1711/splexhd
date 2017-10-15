@@ -1,0 +1,6 @@
+cmake_minimum_required( VERSION 3.8.2 )
+project( splexhd )
+file( GLOB SOURCES "src/*.cc" )
+set( CMAKE_CXX_FLAGS "-lSDL -lpthread  -lGL -lGLU -lpng -lfreetype -logg -lvorbis -lvorbisfile" )
+include_directories( "/usr/include" "/usr/include/SDL" "/usr/include/freetype2" )
+add_executable( splexhd ${SOURCES} )
