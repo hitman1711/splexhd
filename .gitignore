@@ -11,3 +11,8 @@ util/pnggraphics/*.png
 cpxprep
 game
 splexhd
+
+data/levels/
+build/
+.idea
+cmake-build-debug/
