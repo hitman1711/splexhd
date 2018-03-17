@@ -21,8 +21,13 @@
 #include <freetype/ftoutln.h>
 #include <freetype/fttrigon.h>
 
+#ifndef __APPLE__
 #include <GL/gl.h>
 #include <GL/glu.h>
+#else
+#include <OpenGL/gl.h>
+#include <OpenGL/glu.h>
+#endif
 #include <math.h>
 
 #include <vorbis/vorbisfile.h>
